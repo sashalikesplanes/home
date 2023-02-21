@@ -28,6 +28,8 @@ function gpp() { git pull; git push; }
 function gpul() { git pull; }
 function gpus() { git push; }
 
+alias docker='sudo docker'
+alias add='sudo pacman -S'
 alias mike='pm2 restart mike && pm2 monit'
 alias ducks='du -cks * | sort -rn | head'
 alias ga="git add"
