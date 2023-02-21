@@ -28,6 +28,8 @@ function gpp() { git pull; git push; }
 function gpul() { git pull; }
 function gpus() { git push; }
 
+function makegif() { ffmpeg -i "$1" -filter_complex "[0:v] fps=12,scale=480:-1,split [a] [b];[a] palettegen [p];[b] [p] paletteuse" "$2" }
+
 alias docker='sudo docker'
 alias add='sudo pacman -S'
 alias mike='pm2 restart mike && pm2 monit'
