@@ -23,7 +23,7 @@ function touch2() { mkdir -p "${1%/*}" && touch "$1" ; }
 # }
 function gacp() { message="${@}"; git add .; git commit -m "$message"; git push; }
 function gpacp() { message="${@}"; git pull; git add .; git commit -m "$message"; git push; }
-function gac() { message="${@}"; git add .; git commit -m "$message"; } 
+function gacom() { message="${@}"; git add .; git commit -m "$message"; } 
 function gpp() { git pull; git push; }
 function gpul() { git pull; }
 function gpus() { git push; }
