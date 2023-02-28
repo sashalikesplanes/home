@@ -3,6 +3,8 @@
 
 
 
+source /home/sasha/Applications/google-cloud-sdk/pkg/google-cloud-sdk/opt/google-cloud-sdk/completion.zsh.inc
+source /home/sasha/Applications/google-cloud-sdk/pkg/google-cloud-sdk/opt/google-cloud-sdk/path.zsh.inc
 path+=('/Users/sasha/Documents/code/scripts')
 export PATH
 
